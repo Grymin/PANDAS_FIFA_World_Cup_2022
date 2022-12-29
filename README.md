@@ -5,10 +5,30 @@ https://www.kaggle.com/datasets/swaptr/fifa-world-cup-2022-statistics?select=tea
 What has been done in the project:
 - import to Pandas, preparation of data
 - definition for returning axes to subplots
-- seaborn
+- seaborn with modifications (more visible colors etc.)
 
 OUTPUT:
-![Number of goals](https://user-images.githubusercontent.com/87852985/209973758-3c49473e-5d8c-4833-91b7-b3f846af379d.png)
-![polish_players](https://user-images.githubusercontent.com/87852985/209973761-6d498108-d2bb-4391-ac66-5b79992ffe5a.png)
-![teams_comparison](https://user-images.githubusercontent.com/87852985/209973764-03182305-b721-4143-87e4-d665d84e3b66.png)
-![comparison_of_clubs](https://user-images.githubusercontent.com/87852985/209973766-58d8b1ab-f0ca-4bf4-b28d-5a339271ef09.png)
+
+EXAMPLE OF SINGLE GRAPH:
+
+![Dribbles completed per game](https://user-images.githubusercontent.com/87852985/209974917-ff6c2b26-f44c-44c2-b8d4-d0315016a666.png)
+
+FRENCH PLAYERS ANALYSIS:
+
+![France_players](https://user-images.githubusercontent.com/87852985/209974921-55bd0c5e-7ea7-4696-843c-b40ef1bb6ad0.png)
+
+POLISH PLAYERS ANALYSIS:
+
+![Poland_players](https://user-images.githubusercontent.com/87852985/209974922-cfd0a3ac-f609-40bf-b06d-e4eb473aaf96.png)
+
+ARGENTINIAN PLAYERS ANALYSIS:
+
+![Argentina_players](https://user-images.githubusercontent.com/87852985/209974925-bdf403fa-e91b-4199-bc34-cf8a74410eda.png)
+
+TEAMS COMPARISON:
+
+![teams_comparison](https://user-images.githubusercontent.com/87852985/209974923-ea4f7119-c55f-4203-9ebe-70a937de595a.png)
+
+COMPARISON OF CLUBS IN THE World Cup:
+
+![comparison_of_clubs](https://user-images.githubusercontent.com/87852985/209974926-a0a2a5e0-58ea-465a-a4cf-1eb156c449fa.png)
