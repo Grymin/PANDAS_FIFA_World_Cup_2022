@@ -18,10 +18,11 @@ def club_stats():
                                           })
     dfps_club.sort_values(by=['player', 'goals'], ascending=False, inplace=True)
 
+    # Only clubs with more than 10 players
     dfps_club = dfps_club[dfps_club.player >= 10].reset_index()
     number_of_clubs = dfps_club.shape[0]
 
-    # Switch players to negative axis
+    # Switch players to negative axis on the graph
     dfps_club.loc[:, 'player'] = -dfps_club.loc[:, 'player']
 
     # Sort

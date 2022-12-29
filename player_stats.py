@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-def player_stats():
-    """Polish player stats"""
+def player_stats(country='Poland'):
+    """Polish player stats (possible to switch to another country)"""
 
     dfps = pd.read_csv('in/player_stats.csv')
     dfps.info()
@@ -14,7 +14,7 @@ def player_stats():
     age_temp_df = dfps.age.str.split('-', expand=True).astype(int)
     dfps.age = age_temp_df.loc[:, 0] + age_temp_df.loc[:, 1]/365
     dfps.sort_values(by='age', inplace=True, ascending=False)
-    dfps_pol = dfps[dfps.team == 'Poland'].loc[:, ['player', 'minutes', 'age', 'goals', 'assists']]
+    dfps_pol = dfps[dfps.team == country].loc[:, ['player', 'minutes', 'age', 'goals', 'assists']]
     dfps_pol.sort_values(by='minutes', ascending=False, inplace=True)
 
     # graphs
@@ -30,6 +30,6 @@ def player_stats():
         # ax.set_xticks([])
 
     plt.tight_layout(w_pad=0)
-    plt.savefig('out/polish_players')
+    plt.savefig(f'out/{country}_players')
 
     plt.show()

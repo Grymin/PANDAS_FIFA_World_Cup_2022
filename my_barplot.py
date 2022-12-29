@@ -5,7 +5,8 @@ import seaborn as sns
 
 def my_barplot(df, series_x, series_y, title="X_LABEL_TO_SET",
                sort=False, show=False, asc=True):
-    """Definition of personal barplot in seaborn"""
+    """Definition of personal barplot in seaborn
+    (not used in this version) """
 
     team_counter = df.loc[:, series_y].count()
 

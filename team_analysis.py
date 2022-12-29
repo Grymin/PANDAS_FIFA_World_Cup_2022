@@ -4,6 +4,7 @@ import pandas as pd
 
 
 def team_analysis():
+    """ Analyses of each national team results"""
 
     # DF TEAM ANALYSIS
     df_team = pd.read_csv('in/team_data.csv')
